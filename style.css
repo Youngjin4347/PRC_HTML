@@ -1,0 +1,193 @@
+/* 전체 페이지 */
+body {
+    margin: 0;
+    background-color: #f5f6f8;
+    font-family: Arial, sans-serif;
+    color: #212529;
+}
+
+
+/* Navigation */
+.navbar {
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+
+/* Header */
+.page-header {
+    background-color: #ffffff;
+    padding: 45px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.page-header h1 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    color: #6c757d;
+    margin-bottom: 0;
+}
+
+
+/* Card */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+    background-color: #ffffff;
+    padding: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 22px;
+}
+
+
+/* Table */
+.table {
+    background-color: white;
+}
+
+.table th {
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.table td {
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+
+/* 도서 제목 링크 */
+.book-link {
+    color: #0d6efd;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.book-link:hover {
+    text-decoration: underline;
+}
+
+
+/* Form */
+.form-label {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.form-control,
+.form-select {
+    padding: 10px;
+    border-radius: 7px;
+}
+
+
+/* Button */
+.button-area {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    border-radius: 7px;
+    padding: 9px 18px;
+}
+
+
+/* 상세 정보 */
+.book-detail {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.detail-row strong {
+    width: 120px;
+}
+
+.detail-row span {
+    flex: 1;
+    text-align: right;
+}
+
+
+/* Footer */
+footer {
+    margin-top: 80px;
+    padding: 25px 0;
+    background-color: #212529;
+    color: white;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-nav {
+        margin-top: 10px;
+        flex-direction: row;
+    }
+
+    .page-header {
+        padding: 30px 0;
+    }
+
+    .page-header h1 {
+        font-size: 28px;
+    }
+
+    main {
+        margin-top: 30px !important;
+    }
+
+    .detail-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .detail-row strong {
+        width: auto;
+    }
+
+    .detail-row span {
+        text-align: left;
+    }
+
+    .button-area .btn {
+        flex: 1;
+    }
+}

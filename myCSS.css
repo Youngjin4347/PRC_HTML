@@ -1,0 +1,24 @@
+header {
+    background-color: greenyellow;
+}
+
+.wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+#menulist {
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0;
+    display:flex;
+}
+
+ #menulist li {
+    display: inline-block;
+    background-color: rgb(202, 202, 202);
+    margin:1px;
+    padding-right:20px;
+    border-radius:5px;
+    flex:1;
+}
